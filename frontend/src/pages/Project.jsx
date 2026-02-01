@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaNpm } from 'react-icons/fa';
 import { SiTailwindcss, SiMongodb, SiExpress } from 'react-icons/si';
 import project2 from '../assets/project2.png';
+import project1 from '../assets/project1.png';
 import Navbar from '../components/Navbar';
 
 export default function Projects() {
@@ -13,6 +14,14 @@ export default function Projects() {
       link: 'https://kutumb-ruddy.vercel.app',
       description:
         'Kutumb is a modern real estate and architecture web application that helps people discover vendors, workers, and materials for building their dream homes.',
+    },
+    {
+      img: project1,
+      title: 'Heavenly Stays - Find Your Perfect Getaway',
+      year: '2025',
+      link: 'https://heavenly-stays.vercel.app/',
+      description:
+        'A comprehensive platform allowing travelers to explore and book premium vacation stays with ease and comfort.',
     },
   ];
 

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import profilePic from '../assets/your-photo.png';
+
 
 export default function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -112,23 +112,7 @@ export default function Home() {
 
 
         {/* Hero Image */}
-        <motion.div
-          initial={{ y: 200, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.5, ease: 'easeOut', delay: 0.5 }}
-          className="absolute bottom-0 right-10"
-          style={{ overflow: 'hidden' }} // prevents image from overflowing
-        >
-          <img
-            src={profilePic}
-            alt="Profile"
-            className="h-[800px] md:h-[900px] w-auto object-cover"
-            style={{
-              transform: "scale(1.2)", // zoom in more
-              transformOrigin: "bottom right" // keeps bottom-right aligned
-            }}
-          />
-        </motion.div>
+
 
 
 

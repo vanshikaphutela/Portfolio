@@ -8,14 +8,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 h-full w-20 md:w-24 bg-black/90 text-white flex flex-col items-center justify-between py-8 z-50">
+    <nav className="fixed top-0 left-0 h-full w-20 md:w-24 bg-white/90 text-slate-900 flex flex-col items-center justify-between py-8 z-50 border-r border-slate-200">
       {/* Logo with green tint */}
       <div className="mb-4">
         <Link to="/" className="block transition duration-300 hover:scale-105">
           <img
             src={logo}
             alt="Logo"
-            className="w-20 h-20 filter invert-0 saturate-200 hue-rotate-[90deg] transition duration-300 hover:hue-rotate-[60deg] hover:brightness-125"
+            className="w-20 h-20 transition duration-300 hover:scale-110"
           />
         </Link>
       </div>
@@ -32,9 +32,9 @@ export default function Navbar() {
         onClick={() => setIsOpen(!isOpen)}
         className="mb-4 flex flex-col space-y-1"
       >
-        <span className="block w-6 h-0.5 bg-green-400 transition"></span>
-        <span className="block w-6 h-0.5 bg-green-400 transition"></span>
-        <span className="block w-6 h-0.5 bg-green-400 transition"></span>
+        <span className="block w-6 h-0.5 bg-green-600 transition"></span>
+        <span className="block w-6 h-0.5 bg-green-600 transition"></span>
+        <span className="block w-6 h-0.5 bg-green-600 transition"></span>
       </button>
 
       {/* Sliding menu */}
@@ -45,42 +45,38 @@ export default function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: -200 }}
             transition={{ duration: 0.5 }}
-            className="fixed top-0 left-20 md:left-24 h-full w-48 bg-black/80 flex flex-col justify-center space-y-8 px-6"
+            className="fixed top-0 left-20 md:left-24 h-full w-48 bg-white/95 flex flex-col justify-center space-y-8 px-6 border-r border-slate-200"
           >
             <Link
               to="/"
               onClick={() => setIsOpen(false)}
-              className={`text-xl transition-colors ${
-                location.pathname === '/' ? 'text-green-400' : 'hover:text-green-400'
-              }`}
+              className={`text-xl transition-colors ${location.pathname === '/' ? 'text-green-600' : 'hover:text-green-600'
+                }`}
             >
               Home
             </Link>
             <Link
               to="/about"
               onClick={() => setIsOpen(false)}
-              className={`text-xl transition-colors ${
-                location.pathname === '/about' ? 'text-green-400' : 'hover:text-green-400'
-              }`}
+              className={`text-xl transition-colors ${location.pathname === '/about' ? 'text-green-600' : 'hover:text-green-600'
+                }`}
             >
               About
             </Link>
             <Link
               to="/resume"
               onClick={() => setIsOpen(false)}
-              className={`text-xl transition-colors ${
-                location.pathname === '/resume' ? 'text-green-400' : 'hover:text-green-400'
-              }`}
+              className={`text-xl transition-colors ${location.pathname === '/resume' ? 'text-green-600' : 'hover:text-green-600'
+                }`}
             >
               Resume
             </Link>
-            
+
             <Link
               to="/projects"
               onClick={() => setIsOpen(false)}
-              className={`text-xl transition-colors ${
-                location.pathname === '/projects' ? 'text-green-400' : 'hover:text-green-400'
-              }`}
+              className={`text-xl transition-colors ${location.pathname === '/projects' ? 'text-green-600' : 'hover:text-green-600'
+                }`}
             >
               Projects
             </Link>
@@ -88,9 +84,8 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className={`text-xl transition-colors ${
-                location.pathname === '/contact' ? 'text-green-400' : 'hover:text-green-400'
-              }`}
+              className={`text-xl transition-colors ${location.pathname === '/contact' ? 'text-green-600' : 'hover:text-green-600'
+                }`}
             >
               Contact
             </Link>
