@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import profilePic from '../assets/profile.jpeg';
 
 
 export default function Home() {
@@ -107,12 +108,20 @@ export default function Home() {
         </div>
 
         {/* Hero Image */}
-        {/* Hero Image (Zoomed Full Body) */}
-
-
-
-        {/* Hero Image */}
-
+        <div className="flex-1 flex justify-center items-center mt-10 md:mt-0 relative z-10">
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-green-500 shadow-[0_0_20px_rgba(34,197,94,0.5)]"
+          >
+            <img
+              src={profilePic}
+              alt={`${firstName} ${lastName}`}
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+        </div>
 
 
 
