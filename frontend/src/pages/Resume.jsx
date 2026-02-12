@@ -152,7 +152,7 @@ export default function Resume() {
           </h2>
 
           <p className="text-slate-600 mb-3">
-            <strong>Languages:</strong> Java, C/C++, JavaScript, SQL
+            <strong>Languages:</strong> Java, C/C++, JavaScript, Python, SQL
           </p>
           <p className="text-slate-600 mb-3">
             <strong>Frameworks:</strong> React.js, Node.js, Express.js, Tailwind CSS
@@ -161,7 +161,7 @@ export default function Resume() {
             <strong>Databases:</strong> MongoDB, MySQL
           </p>
           <p className="text-slate-600 mb-3">
-            <strong>Concepts:</strong> OOP, DSA, REST APIs, OS, DBMS, Web Security
+            <strong>Concepts:</strong> OOP, DSA, REST APIs, OS, DBMS, Web Security, Gen AI
           </p>
 
           {/* Icons */}
